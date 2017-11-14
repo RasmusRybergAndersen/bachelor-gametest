@@ -1,0 +1,19 @@
+{
+  "name": "bachelor-gametest",
+  "version": "0.0.1",
+  "description": "Game Test bachelor project",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheKillCommander/bachelor-gametest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheKillCommander/bachelor-gametest/issues"
+  },
+  "homepage": "https://github.com/TheKillCommander/bachelor-gametest#readme"
+}
