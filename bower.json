@@ -1,0 +1,23 @@
+{
+  "name": "bachelor-gametest",
+  "description": "Game Test bachelor project",
+  "main": "index.php",
+  "authors": [
+    "TheKillCommander <brevet8@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/TheKillCommander/bachelor-gametest",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "jquery": "^3.2.1",
+    "susy": "^3.0.1"
+  }
+}
