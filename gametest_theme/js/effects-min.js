@@ -1,0 +1,1 @@
+$(function(){var e=new Typed(".type",{strings:["Webudvikler.","UX Desginer.","Grafiker."],typeSpeed:75,backSpeed:65,startDelay:800,loop:!0,showCursor:!0});$(".udtalelser-slick").slick({infinite:!0,speed:300,slidesToShow:1,slidesToScroll:1,autoplay:!1})});
