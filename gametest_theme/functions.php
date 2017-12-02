@@ -63,6 +63,10 @@
 	
 	add_action('widgets_init', 'morten_widgets_init');
 
+
+
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -108,3 +112,6 @@ require_once('inc/aq_resizer.php');
 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/morten_theme/inc/cuztom-functions.php')) {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/morten_theme/inc/cuztom-functions.php';
 }
+
+
+ require get_template_directory() . "/inc/cuztom-functions.php";
