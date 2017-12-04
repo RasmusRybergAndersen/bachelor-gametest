@@ -16,10 +16,30 @@ get_header();
 
 
 
-<div id="forside">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php the_title(); ?>
-        <?php the_content(); ?>
-    <?php endwhile; endif; ?>
-</div>	  			
-<?php get_footer(); ?>
+    <div id="forside">
+        <!-- Henter slider her -->
+        <div>
+            <?php get_template_part('inc/slider', get_post_format()); ?>
+        </div>
+
+        <div class="nyt_indhold">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 artikler">
+                        
+                    </div>
+                    
+                    <div class="col-xl-4 podcasts">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <?php get_footer(); ?>

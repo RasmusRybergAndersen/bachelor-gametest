@@ -1,1 +1,1 @@
-$(function(){var e=new Typed(".type",{strings:["Webudvikler.","UX Desginer.","Grafiker."],typeSpeed:75,backSpeed:65,startDelay:800,loop:!0,showCursor:!0});$(".udtalelser-slick").slick({infinite:!0,speed:300,slidesToShow:1,slidesToScroll:1,autoplay:!1})});
+window.onload=function(){jQuery(".forside-slider").slick({draggable:!0,arrows:!1,dots:!1,autoplay:!0,autoplaySpeed:4e3,fade:!0,speed:4e3,infinite:!0})};

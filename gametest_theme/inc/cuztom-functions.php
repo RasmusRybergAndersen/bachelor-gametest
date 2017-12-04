@@ -50,6 +50,32 @@ function cptui_register_my_cpts() {
 	);
 
 	register_post_type( "team", $args );
+    
+    
+    $labels = array(
+		"name" => __( "Slider", "" ),
+		"singular_name" => __( "Slider", "" ),
+	);
+    
+    $args = array(
+		'label'                 => __( 'Slider', 'slider' ),
+		'labels'                => $labels,
+		'supports'              => array('title', 'editor', 'thumbnail',),
+                'menu_icon'             => 'dashicons-images-alt2',
+		'taxonomies'            => array( ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => false,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => false,
+	);
+	register_post_type( 'slider', $args );
 }
 
 add_action( 'init', 'cptui_register_my_cpts' );

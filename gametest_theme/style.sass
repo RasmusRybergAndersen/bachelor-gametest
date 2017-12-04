@@ -4,32 +4,42 @@
  * Version: 0.0.1
  * Tags: bootstrap */
  
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900')
-$color: #4b8f93
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,900');
+$color: #97274F
 $color_light: #519b9b
-$black: #444444
+$black: #313131
+$black_light: #454545
+$black_dark: #262626
 $white: #ffffff
 $grey: #7a7a7a
-$font: Lato, sans-serif
+$gul: #F2C22A
+$gul_light: #FDD247
+$font: Titillium Web, sans-serif;
 
 
 body 
-  font-family: $font
-  font-size: 16px
+	font-family: $font
+  	font-size: 16px
+	background-color: $black_light
+
 
 // ----- Header -----//
 
 #header 
-  background-color: $white
+  background-color: $black
   z-index: 10
   width: 100%
+  padding: 20px 0
   -webkit-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
   -moz-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
   box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
-
+	
 #logo
   img
     width: 175px
+    
+    
+    
 // ----- Menu -----//
 
 #menu-primaer_menu
@@ -42,67 +52,114 @@ body
   text-transform: uppercase
 
 
+
   a 
-    color: $black
+    color: $white
   
   a:hover
     box-shadow: 0 2px 0 0 #444444
 
+ 
 .main_menu 
   width: 100%
 
-// ----- Velkommen -----//
+// ----- Menu dropdown -----//
 
-// ----- Om mig -----//
+ul.menu,ul.menu ul,ul.menu li,ul.menu a 
+    display: block
+    margin: 0
+    padding: 0
 
-// ----- CV -----//
+
+ul.menu ul 
+    display: none
+
+
+ul.menu li:hover > ul 
+    display: block
+    position: absolute
+
+
+// ----- Slider -----//
+
+.forside-slider, .sliderindhold
+    height: 400px
+	
+.forside-slider
+	color: $white
+
+.sliderindhold h6
+    padding-top: 75px
+	
+
+// ----- Forside -----//
+
+#forside
+    .nyt_indhold
+        height: 1000px
+    .artikler
+        height: 100%
+        background-color: $black
+        
+    .podcasts
+        height: 100%
+        background-color: $black_dark
+        
+
+        
+// ----- Kontakt -----//
+
+#kontakt
+    background-color: $white
 
 // ----- Udtalelser -----//
 
 // ----- Footer -----//
 #footer 
-  background-color: $color
+  background-color: $black
 
   .footer_boks 
-    padding: 50px 25px
-    color: #ffffff 
+    color: $white
 
     .textwidget
 
       p 
         font-size: 0.875rem
         font-weight: 300 
+		color: $white
 
 
 // ----- Fonts -----//
 h1
-  color: $grey
-  font-size: 1.5rem
-  display: inline
-
+  color: $black
+  font-size: 2rem
+  margin-bottom: 20px
 h2
-  font-size: 3rem
+  font-size: 2rem
   font-weight: 900
   text-align: center
   padding-bottom: 50px 
 
 h3
-  font-size: 4rem
+  font-size: 1.375rem
   font-weight: 900
 
 
 h4 
-  font-size: 1rem
+  font-size: 1.25rem
   text-transform: uppercase
   font-weight: 700 
 
 p
-  font-size: 1.375rem
+  font-size: 1rem
   line-height: 1.8
   font-weight: 300
 
 
 // ----- Padding & margin -----//
+.padding25
+  padding: 25px 0
+
 .padding50
   padding: 50px 0
 
@@ -122,6 +179,60 @@ p
   padding: 100px 
 
 
+// ----- Overlays -----//
+
+.overlay
+	position: absolute
+	top: 0px
+	float: left
+	bottom: 0px
+	min-width: 100%
+	overflow: hidden
+    z-index: 5
+
+.overlay.black 
+    background: rgba(0, 0, 0, 0.5)
+
+// ----- Kanpper -----//
+	
+.cta_btn, a.cta_btn
+	background-color: $gul
+	
+	color: $white
+	border: 3px solid $gul
+	text-decoration: none
+	padding: 15px 60px
+	margin: 20px 10px 20px 0px
+  	font-size: 16px
+	cursor: pointer
+	font-style: normal
+    font-weight: 400
+    line-height: 1.6em
+    letter-spacing: .02em
+	border-radius: 5px
+   	transition: color .15s ease-out,background-color .15s ease-out,border-color .15s ease-out
+	-webkit-transition: color .15s ease-out,background-color .15s ease-out,border-color .15s ease-out
+    -moz-transition: color .15s ease-out,background-color .15s ease-out,border-color .15s ease-out
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+.cta_btn:hover, a.cta_btn:hover 
+    background-color: $gul_light
+    border: 3px solid $gul_light
+
+
+.cta_btn.cta_btn_2, a.cta_btn.cta_btn_2 
+    background: 0
+    color: $white
+    border: 3px solid $gul
+
+	
+.cta_btn.cta_btn_2:hover, a.cta_btn.cta_btn_2:hover 
+    background-color: $gul_light
+    border: 3px solid $gul_light
+
+	
 
 // ----- Custom classes -----//
 .nospace 
@@ -138,3 +249,5 @@ p
 .sektion
   min-width: 100%
   padding: 100px 0
+
+

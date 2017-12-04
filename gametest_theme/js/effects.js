@@ -1,22 +1,13 @@
-$(function() {
-var typed = new Typed('.type', {
-  strings: ["Webudvikler.", "UX Desginer.", "Grafiker."],
-  typeSpeed: 75,
-  backSpeed: 65,
-  startDelay: 800,
-  loop: true,
-  showCursor: true
-});
+window.onload = function () {
+    jQuery('.forside-slider').slick({
+        draggable: true,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true,
+        speed: 4000,
+        infinite: true,
 
-
-
-
-
-$('.udtalelser-slick').slick({
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false
-});
-});
+    });
+}
