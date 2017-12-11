@@ -433,6 +433,13 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/search.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/search.php",
+		"oF": 0
+		},
 	"\/skabeloner\/skabelon - forside.php": {
 		"cB": 0,
 		"ft": 8192,

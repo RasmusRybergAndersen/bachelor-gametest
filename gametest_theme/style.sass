@@ -29,7 +29,7 @@ body
   background-color: $black
   z-index: 10
   width: 100%
-  padding: 20px 0
+  padding: 10px 125px
   -webkit-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
   -moz-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
   box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
@@ -57,7 +57,8 @@ body
     color: $white
   
   a:hover
-    box-shadow: 0 2px 0 0 #444444
+    color: $gul
+    text-decoration: none
 
  
 .main_menu 
@@ -78,8 +79,39 @@ ul.menu ul
 ul.menu li:hover > ul 
     display: block
     position: absolute
+    background-color: $black
+    box-shadow: 0 0.25em 0 0 #2a2a2a, 0 4px 9px rgba(0,0,0,0.75)
+    padding: 10px 20px
+    z-index: 99
+    
+    
+.sub-menu li a
+    margin: 10px 0
 
 
+// ----- Social icons -----//
+    
+
+.social_icons svg
+    height: 20px
+    width: auto
+    margin: 10px
+    
+
+    
+
+    
+.social_icons path:hover
+    fill: $gul
+    box-shadow: 5px 10px #888888
+
+
+
+    
+
+    
+    
+    
 // ----- Slider -----//
 
 .forside-slider, .sliderindhold
@@ -116,24 +148,25 @@ ul.menu li:hover > ul
 
 // ----- Footer -----//
 #footer 
-  background-color: $black
+    background-color: $black
 
-  .footer_boks 
-    color: $white
+    .subfooter
+        color: $white
+        
+        a
+            color: $gul
 
-    .textwidget
 
-      p 
-        font-size: 0.875rem
-        font-weight: 300 
-		color: $white
+        
+    
+
 
 
 // ----- Fonts -----//
 h1
   color: $black
   font-size: 2rem
-  margin-bottom: 20px
+  margin-bottom: 40px
 h2
   font-size: 2rem
   font-weight: 900
@@ -191,7 +224,7 @@ p
     z-index: 5
 
 .overlay.black 
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(151,39,79, 0.75)
 
 // ----- Kanpper -----//
 	
@@ -250,4 +283,11 @@ p
   min-width: 100%
   padding: 100px 0
 
+.screen-reader-text
+    display: none;
+
+.searchform
+    margin: 0
+    padding: 0
+    
 
