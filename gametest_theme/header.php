@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-xl-2 d-flex justify-content-center">
                 <div id="logo">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <img src="/filer/logo.png" alt="<?php bloginfo(); ?>" /> </a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <img src="https://rasmusra.dk/wordpress/filer/logo.png" alt="<?php bloginfo(); ?>" /> </a>
                 </div>
             </div>
             <div class="col-xl-4 align-self-center">

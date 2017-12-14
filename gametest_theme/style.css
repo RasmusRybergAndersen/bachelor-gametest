@@ -63,8 +63,11 @@ ul.menu li:hover > ul {
   margin: 10px; }
 
 .social_icons path:hover {
-  fill: #F2C22A;
-  box-shadow: 5px 10px #888888; }
+  fill: #F2C22A; }
+
+.social_icons a {
+  padding: 10px 0;
+  margin: 0 10px; }
 
 .forside-slider, .sliderindhold {
   height: 400px; }
@@ -75,15 +78,10 @@ ul.menu li:hover > ul {
 .sliderindhold h6 {
   padding-top: 75px; }
 
-#forside .nyt_indhold {
-  height: 1000px; }
-
 #forside .artikler {
-  height: 100%;
   background-color: #313131; }
 
 #forside .podcasts {
-  height: 100%;
   background-color: #262626; }
 
 #kontakt {

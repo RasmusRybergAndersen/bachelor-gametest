@@ -2,7 +2,7 @@ window.onload = function () {
     jQuery('.forside-slider').slick({
         draggable: true,
         arrows: false,
-        dots: true,
+        dots: false,
         autoplay: true,
         autoplaySpeed: 4000,
         fade: true,

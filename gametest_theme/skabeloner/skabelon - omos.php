@@ -15,6 +15,8 @@ get_header();
 
 
 <div id="kontakt" class="">
+    <?php if ( function_exists('yoast_breadcrumb') ) 
+{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
     <div class="omos padall50"> 
         <div class="container">
             <div class="row">

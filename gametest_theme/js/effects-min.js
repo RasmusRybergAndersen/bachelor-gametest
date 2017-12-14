@@ -1,1 +1,1 @@
-window.onload=function(){jQuery(".forside-slider").slick({draggable:!0,arrows:!1,dots:!0,autoplay:!0,autoplaySpeed:4e3,fade:!0,speed:4e3,infinite:!0})};
+window.onload=function(){jQuery(".forside-slider").slick({draggable:!0,arrows:!1,dots:!1,autoplay:!0,autoplaySpeed:4e3,fade:!0,speed:4e3,infinite:!0})};
