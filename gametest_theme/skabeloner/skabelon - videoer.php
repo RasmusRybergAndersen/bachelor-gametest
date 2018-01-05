@@ -18,13 +18,28 @@ get_header();
 
     <div id="videoer">
         <?php if ( function_exists('yoast_breadcrumb') ) 
-{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
+            {yoast_breadcrumb('<p id="breadcrumbs">','</p>');}
+        ?>
         <!-- Henter slider her -->
         <div>
             <?php get_template_part('inc/slider', get_post_format()); ?>
         </div>
 
-        
+        <div class="videoer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+
+                
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
 
 

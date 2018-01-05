@@ -19,39 +19,14 @@ get_header();
     <div id="forside">
         <!-- Henter slider her -->
         <div>
-            <?php get_template_part('inc/slider', get_post_format()); ?>
+            <?php get_template_part('inc/sektioner/slider', get_post_format()); ?>
         </div>
 
         <div class="nyt_indhold">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 artikler">
-                                           <?php
-
-
-                        $args = array(
-                            'post_type' => 'youtube',
-                            'posts_per_page' => 5,
-                            'orderby' => date
-                        );
-
-                        $the_query = new WP_Query($args);
-
-                    ?> 
-
-                        <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                        <div class="col-xl-12">
-                            <h2><?php the_title(); ?></h2>
-                            
-                            <?php the_field('video'); ?>
-                            <p><?php the_field('beskrivelse'); ?></p>
-                            
-                            
-                            
-                        </div>
-                    <?php endwhile; ?>
-                    <?php endif; ?>
-
+                        <?php include(locate_template('inc/sektioner/arkiv-forside.php', get_post_format()));?>
                     </div>
                     
                     <div class="col-xl-4 podcasts">
