@@ -246,6 +246,34 @@
 		"oAP": "\/inc\/cuztom-functions.php",
 		"oF": 0
 		},
+	"\/inc\/sektioner\/arkiv-forside copy.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/sektioner\/arkiv-forside copy.php",
+		"oF": 0
+		},
+	"\/inc\/sektioner\/arkiv-forside.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/sektioner\/arkiv-forside.php",
+		"oF": 0
+		},
+	"\/inc\/sektioner\/img_header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/sektioner\/img_header.php",
+		"oF": 0
+		},
+	"\/inc\/sektioner\/slider.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/sektioner\/slider.php",
+		"oF": 0
+		},
 	"\/inc\/sektioner\/team.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -399,19 +427,22 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/inc\/slider.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/slider.php",
-		"oF": 0
-		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
 		"oF": 0
+		},
+	"\/js\/effects-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/effects-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/js\/effects.js": {
 		"ft": 64,
@@ -430,6 +461,20 @@
 		"oAP": "\/search.php",
 		"oF": 0
 		},
+	"\/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single.php",
+		"oF": 0
+		},
+	"\/skabeloner\/skabelon - anmeldelser.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/skabeloner\/skabelon - anmeldelser.php",
+		"oF": 0
+		},
 	"\/skabeloner\/skabelon - forside.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -437,11 +482,25 @@
 		"oAP": "\/skabeloner\/skabelon - forside.php",
 		"oF": 0
 		},
+	"\/skabeloner\/skabelon - hurtigsnas.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/skabeloner\/skabelon - hurtigsnas.php",
+		"oF": 0
+		},
 	"\/skabeloner\/skabelon - omos.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/skabeloner\/skabelon - omos.php",
+		"oF": 0
+		},
+	"\/skabeloner\/skabelon - videoer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/skabeloner\/skabelon - videoer.php",
 		"oF": 0
 		},
 	"\/style.css": {

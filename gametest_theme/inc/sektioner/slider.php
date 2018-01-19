@@ -6,7 +6,7 @@
                 while ( $loop->have_posts() ) : $loop->the_post(); 
            ?>
     <div style="background:url(<?php echo aq_resize(wp_get_attachment_url(get_post_thumbnail_id()), 1920, 1080, true, true, true); ?>)">
-        <div class="overlay black"> </div>
+        <div class="overlay purple"> </div>
 
         <div class="">
             <div class="container">
@@ -19,6 +19,8 @@
                             <h2>
                                 <?php the_title(); ?>
                             </h2>
+
+                            <?php the_content(); ?>
 
 
                             <?php if (get_field ('link_1') ) : ?>

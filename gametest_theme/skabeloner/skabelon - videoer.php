@@ -17,29 +17,24 @@ get_header();
 
 
     <div id="videoer">
-        <?php if ( function_exists('yoast_breadcrumb') ) 
-            {yoast_breadcrumb('<p id="breadcrumbs">','</p>');}
-        ?>
-        <!-- Henter slider her -->
+
+        <!-- Henter subheader-slider her -->
         <div>
-            <?php get_template_part('inc/slider', get_post_format()); ?>
+            <?php get_template_part('inc/sektioner/subheader-slider', get_post_format()); ?>
         </div>
 
-        <div class="videoer">
+        <div class="arkiv_indhold">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-
-                
-
-
+                        <div class="artikler margin50">
+                            <h2 class="padall25">Alle videoer</h2>
+                            <?php include(locate_template('inc/sektioner/arkiv-videoer.php', get_post_format()));?>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </div>
 
 

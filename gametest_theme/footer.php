@@ -1,4 +1,4 @@
-<div id="footer">
+<div classe="footer">
     <div class="container">
         <div class="row">
             <div class="col-4 footer_boks">
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="container-fulid subfooter">
+    <div class="container-fulid" id="footer">
         <div class="row"> 
             <div class="col-12 text-center padding25">
                 Copyright &copy; <?php echo date('Y'); ?> <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"> <?php bloginfo('name'); ?></a> - Alle rettigheder forbeholdes. Læs vores behandling af personoplysninger og cookies og vilkår for brug.

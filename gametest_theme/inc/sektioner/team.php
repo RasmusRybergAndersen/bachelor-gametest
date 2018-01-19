@@ -7,7 +7,7 @@
                         $args = array(
                             'post_type' => 'team',
                             'posts_per_page' => 10,
-                            'orderby' => date
+                            'orderby' => 'date'
                         );
 
                         $the_query = new WP_Query($args);

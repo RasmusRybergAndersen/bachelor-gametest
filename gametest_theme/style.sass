@@ -4,7 +4,7 @@
  * Version: 0.0.1
  * Tags: bootstrap */
  
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,900')
 $color: #97274F
 $color_light: #519b9b
 $black: #313131
@@ -14,7 +14,7 @@ $white: #ffffff
 $grey: #7a7a7a
 $gul: #F2C22A
 $gul_light: #FDD247
-$font: Titillium Web, sans-serif;
+$font: Titillium Web, sans-serif
 
 
 body 
@@ -23,21 +23,24 @@ body
 	background-color: $black_light
 
 
+
 // ----- Header -----//
 
 #header 
-  background-color: $black
+  background-color: $black_dark
   z-index: 10
   width: 100%
   padding: 10px 125px
   -webkit-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
   -moz-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
-  box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1)
-	
+  box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.3)
+  
 #logo
   img
     width: 175px
     
+
+
     
     
 // ----- Menu -----//
@@ -79,7 +82,7 @@ ul.menu ul
 ul.menu li:hover > ul 
     display: block
     position: absolute
-    background-color: $black
+    background-color: $black_dark
     box-shadow: 0 0.25em 0 0 #2a2a2a, 0 4px 9px rgba(0,0,0,0.75)
     padding: 10px 20px
     z-index: 99
@@ -91,49 +94,228 @@ ul.menu li:hover > ul
 
 // ----- Social icons -----//
     
+.social 
+  position: fixed
+  top: 15%
+  z-index: 100
+  left: 0
+  
+  
+  ul 
+    padding: 0px
+    -webkit-transform: translate(-250px, 0)
+    -moz-transform: translate(-250px, 0)
+    -ms-transform: translate(-250px, 0)
+    -o-transform: translate(-250px, 0)
+    transform: translate(-250px, 0)
+    li 
+      display: block
+      margin: 5px
+      width: 300px
+      text-align: right
+      padding: 10px
+      -webkit-border-radius: 0 30px 30px 0
+      -moz-border-radius: 0 30px 30px 0
+      border-radius: 0 30px 30px 0
+      -webkit-transition: all 1s
+      -moz-transition: all 1s
+      -ms-transition: all 1s
+      -o-transition: all 1s
+      transition: all 1s
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+      -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
 
-.social_icons svg
-    height: 20px
-    width: auto
-    margin: 10px
+      &:hover 
+        -webkit-transform: translate(170px, 0)
+        -moz-transform: translate(170px, 0)
+        -ms-transform: translate(170px, 0)
+        -o-transform: translate(170px, 0)
+        transform: translate(170px, 0)
+        a 
+          color: $white
+          text-decoration: none
+        
+        i 
+          background: $white
+          -webkit-transform: rotate(360deg)
+          -moz-transform: rotate(360deg)
+          -ms-transform: rotate(360deg)
+          -o-transform: rotate(360deg)
+          transform: rotate(360deg)
+          -webkit-transition: all 1s
+          -moz-transition: all 1s
+          -ms-transition: all 1s
+          -o-transition: all 1s
+          transition: all 1s
+        
+      
+      i 
+        margin-left: 10px
+        color: $black_light
+        background: #fff
+        padding: 10px
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        font-size: 20px
+        background: #ffffff
+        -webkit-transform: rotate(0deg)
+        -moz-transform: rotate(0deg)
+        -ms-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
 
-    
-    
-.social_icons path:hover
-    fill: $gul
-
-    
-    
-.social_icons a 
-    padding: 10px 0
-    margin: 0 10px
-    
-
-    
+    a 
+        color: $white
+        text-decoration: none
     
     
 // ----- Slider -----//
 
 .forside-slider, .sliderindhold
-    height: 400px
+    
 	
 .forside-slider
-	color: $white
+    width: 100%
+    color: $white
+    height: 400px
 
-.sliderindhold h6
-    padding-top: 75px
+
+.sliderindhold
+    width: 50%
+    margin: 0 auto
+    height: 100%
+
+    p
+        margin: 25px 0 50px
+
+    h6
+        padding-top: 75px
+
+    h2
+        padding: 0
 	
+// ----- Subheader slider -----//
+
+.subheader-slider
+    height: 400px
+
+    .sliderindhold
+        padding: 130px 0
+        
+        h2, p  
+            color: $white
+            text-decoration: none
+
+        a
+            color: $gul
+            text-decoration: none
 
 // ----- Forside -----//
 
 #forside
-    .nyt_indhold
+
+    .arkiv_indhold
         
-    .artikler
+
+        h3, p
+            color: $white
+            text-decoration: none
+
+        p
+            margin: 0
+
+        h2
+            background-color: $black_dark
+            color: $white
+        
+    .artikler, .podcasts
         background-color: $black
+        padding: 0
+
+        a
+            text-decoration: none
+            
+
+        article
+            margin: 50px 0
+            
+
+        iframe
+            width: 100%
+            height: 150px
+            
+        .dato
+            margin-left: 10px
+
+        .medarbejder
+            color: $gul
+            margin-left: 5px
+
+        .dato_medarbejder
+
+            position: absolute
+            bottom: 0
+
+            p
+                font-weight: 300
+                font-size: 0.875rem
+
+           
+// ----- Videoer -----//
+
+#videoer, #hurtig_snas
+
+    .arkiv_indhold
         
-    .podcasts
-        background-color: $black_dark
+
+        h3, p
+            color: $white
+            text-decoration: none
+
+        h2
+            background-color: $black_dark
+            color: $white
+        
+    .artikler, .podcasts
+        background-color: $black
+        padding: 0
+
+        a
+            text-decoration: none
+            
+
+        article
+            margin: 50px 0
+            
+
+        iframe
+            margin: 0
+            padding: 0
+            border: none
+            width: 100%
+            height: 230px
+
+            
+        .dato
+            margin-left: 10px
+
+        .medarbejder
+            color: $gul
+            margin-left: 5px
+
+        .dato_medarbejder
+
+            position: absolute
+            bottom: 0
+
+            p
+                font-weight: 300
+                font-size: 0.875rem
+
         
 
         
@@ -145,14 +327,17 @@ ul.menu li:hover > ul
 // ----- Udtalelser -----//
 
 // ----- Footer -----//
-#footer 
-    background-color: $black
+.footer 
+    
 
-    .subfooter
-        color: $white
-        
-        a
-            color: $gul
+#footer
+    color: $white
+    font-size:  0.75rem
+    background-color: $black_dark
+    
+    a
+        color: $gul
+
 
 
         
@@ -167,22 +352,22 @@ h1
   margin-bottom: 40px
 h2
   font-size: 2rem
-  font-weight: 900
+  font-weight: 700
   text-align: center
-  padding-bottom: 50px 
+  padding-bottom: 25px 
 
 h3
-  font-size: 1.375rem
-  font-weight: 900
+  font-size: 1.25rem
+  font-weight: 700
 
 
 h4 
-  font-size: 1.25rem
+  font-size: 1.125rem
   text-transform: uppercase
   font-weight: 700 
 
 p
-  font-size: 1rem
+  font-size: 0.875rem
   line-height: 1.8
   font-weight: 300
 
@@ -200,6 +385,9 @@ p
 .padding100
   padding: 100px 0 
 
+.padall25
+    padding: 25px
+
 .padall50
   padding: 50px 
 
@@ -208,6 +396,16 @@ p
 
 .padall100
   padding: 100px 
+
+
+.margin25
+    margin: 25px 0
+
+.margin50
+    margin: 50px 0
+
+.margin75
+    margin: 75px 0
 
 
 // ----- Overlays -----//
@@ -221,9 +419,44 @@ p
 	overflow: hidden
     z-index: 5
 
-.overlay.black 
+.overlay.purple 
     background: rgba(151,39,79, 0.75)
 
+.overlay.black 
+    background: rgba(59, 89, 152, 0.75)
+
+
+  
+
+// ----- Colors -----//
+
+.facebook-bgcolor
+    background-color: #3b5998 !important
+
+.facebook-color
+    color: #3b5998 !important
+
+.twitter-bgcolor
+    background-color: #00aced !important
+
+.twitter-color
+    color: #00aced !important
+
+.youtube-bgcolor
+    background-color: #FF0000 !important
+
+.youtube-color
+    color: #FF0000 !important
+
+.itunes-bgcolor
+    background-color: #be64f7 !important
+
+.itunes-color
+    color: #be64f7 !important
+ 
+
+
+    
 // ----- Kanpper -----//
 	
 .cta_btn, a.cta_btn
@@ -282,7 +515,7 @@ p
   padding: 100px 0
 
 .screen-reader-text
-    display: none;
+    display: none
 
 .searchform
     margin: 0
