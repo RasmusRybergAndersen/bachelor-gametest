@@ -1,3 +1,4 @@
+        <section class="team sektion">
         <div class="container">
                 <h2>Vores hold</h2>
                 <div class="row">
@@ -15,7 +16,9 @@
                     ?> 
 
                         <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                        <div class="col-xl-3">
+                        
+                        <div class="col-xl-3 margin25">
+                        
                             <?php 
                                 $image = get_field('billede');
 
@@ -31,12 +34,15 @@
                                 ?>
                                 <h5><?php the_field('navn'); ?></h5>
                                 <h7><?php the_field('stilling'); ?></h7>
-
+                                
+                                <a class="d-block" href="<?php echo get_permalink(); ?>"> Læs mere </a>
                             </div>
+                           
                         </div>
+                        
                     <?php endwhile; ?>
                     <?php endif; ?>
 
             </div>
         </div> 
-   
+        </section>

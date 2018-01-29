@@ -18,11 +18,11 @@
                     <div class="container-fluid">
                         <div class="row">
                             <!-- Henter video -->
-                            <div class="col-xl-5">
-                                <?php the_field('video'); ?>
+                            <div class="col-xl-4">
+                                <img src="<?php the_field('tn_link'); ?>" alt="">
                             </div>
                             <!-- Henter titlen -->
-                            <div class="col-xl-7">
+                            <div class="col-xl-8">
                                 <h3>
                                     <?php the_title(); ?>
                                 </h3>
@@ -46,7 +46,7 @@
 
                                     <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
                                     <p class="medarbejder">
-                                        <?php the_field('navn', $p->ID); ?>, </p>
+                                        <?php the_field('kort_navn', $p->ID); ?>, </p>
                                     <?php endforeach; ?>
 
 

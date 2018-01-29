@@ -14,10 +14,10 @@ get_header();
 ?>
 
 
-<div id="kontakt" class="">
-    <?php if ( function_exists('yoast_breadcrumb') ) 
-{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
-    <div class="omos padall50"> 
+<div id="omos">
+  <!--  <?php if ( function_exists('yoast_breadcrumb') ) 
+{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?> -->
+    <section class="omos"> 
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -46,10 +46,8 @@ get_header();
                 </div>
             </div>
         </div>
-    </div>
-    <div class="team padall50">
+    </section>
         <?php include(locate_template('inc/sektioner/team.php', get_post_format()));?>
-    </div> 
 </div> 
 
 
